@@ -80,6 +80,7 @@ main{
 
 .warning{
     width: 69%;
+    font-size: 17px;
 }
 
 .warning img, .warning p{
