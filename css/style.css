@@ -1,6 +1,7 @@
 /* general styles */
 body{
     background: #F3F5FC;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* header styles */
@@ -80,9 +81,62 @@ main{
     color: #0A3871;
 }
 
+.output-enabled{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.output-enabled textarea{
+    height: 85%;
+}
+
+.toCopy{
+    width: 90%;
+    height: 12%;
+    margin: 10% 0 0 0;
+    background-color: #ffffff;
+    border-radius: 20px;
+    color: #0A3871;
+    border: 1px solid #0A3871;
+    font-size: 20px;
+}
+
+.toCopy:hover{
+    background: #0A3871;
+    color: #ffffff;
+    box-shadow: 1px 1px 10px #19416b;
+}
+
+.output-disabled{
+    padding: 13% 0;
+    height: 100%;
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.output-disabled img:first-child{
+    width: 90%;
+}
+
+.output-disabled p:nth-child(2){
+    font-size: 24px;
+    font-weight: bolder;
+    margin: 30px 0 20px 0;
+}
+
+.output-disabled p:nth-child(3){
+    font-size: 17px;
+    margin: 0px 10px;
+}
+
 .warning{
     width: 69%;
     font-size: 17px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .warning img, .warning p{

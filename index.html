@@ -19,12 +19,20 @@
     </header>
     <main>
         <section class="encrypt-area">
-            <textarea class="input" id="" cols="30" rows="12" placeholder="Inserte texto aquí" ></textarea>
+            <textarea class="input" id="input-text" cols="30" rows="12" placeholder="Inserte texto aquí" ></textarea>
         </section><section class="output-area">
-            <textarea class="output" name="" id="" cols="30" rows="10" ></textarea>
+            <div class="output-enabled" id="output-enabled">
+                <textarea class="output" name="" id="output-text" cols="30" rows="13" readonly></textarea>
+                <input type="submit" class="toCopy" value="Copiar" id="copy-button">
+            </div>
+            <div class="output-disabled" id="output-disabled">
+                <img src="./images/Muñeco.png" alt="Muñeco_texto no encontrado">
+                <p>Ningún mensaje fue encontrado</p>
+                <p>Ingrese un texto que desees encriptar o desencriptar</p>
+            </div>
         </section>
         <div class="warning">
-            <img src="./images/icons8-alta-importancia-16.png" alt="">
+            <img src="./images/icons8-alta-importancia-16.png" alt="icono de advertencia">
             <p>Solo letras minúsculas y sin acentos.</p>
         </div>
         <div class="options">
@@ -34,14 +42,13 @@
     </main>
     <footer>
         <div class="personal-information">
-            
             <p> 
                 <img src="./images/icons8-linkedin-32.png" alt="linkedin-icon">
-                <a href="https://www.linkedin.com/in/anthony-nav04">Linkedin</a>
+                <a href="https://www.linkedin.com/in/anthony-nav04" target="_blank">Linkedin</a>
             </p>
             <p>
                 <img src="./images/github.png" alt="">
-                <a href="https://github.com/AnthonyNav">GitHub</a>
+                <a href="https://github.com/AnthonyNav" target="_blank">GitHub</a>
             </p>
         </div>
     </footer>
